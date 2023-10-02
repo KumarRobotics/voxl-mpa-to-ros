@@ -148,8 +148,73 @@ static void _helper_cb(__attribute__((unused))int ch, char* data, int bytes, voi
         odomMsg.twist.twist.angular.y = data.imu_angular_vel[1];
         odomMsg.twist.twist.angular.z = data.imu_angular_vel[2];
 
+	const int covariance_mpa_size = 21;
+	const int covariance_odom_size = 36;
+	// ROS_INFO_STREAM("START!");
+	// for (int i = 0; i < covariance_mpa_size; i++) {
+	//     std::cout << data.pose_covariance[i] << " " ;
+	// }
+	// std::cout << std::endl;
+
+	// extract pose/orientation covariances- Kashish Garg edit
+	int triangle_sequence = 0;
+	int counter = 0;
+
+	for (int i = 6; i > 1; i--) { 
+	    // Set triangle sequence:
+	    if (i == 6) {
+	        triangle_sequence = 0;
+	    } else if(i == 5) {
+	        triangle_sequence = 1;
+	    } else if(i == 4) {
+	        triangle_sequence = 3;
+	    } else if(i == 3) {
+	        triangle_sequence = 6;
+	    } else if(i == 2) {
+	        triangle_sequence = 10;
+	    }
+	    for(int j = 0; j < i; j++) {
+
+	        // ROS_INFO_STREAM("i : " << i);
+	        // ROS_INFO_STREAM("Five sequence : " << j * 5);
+	        // ROS_INFO_STREAM("Triangle sequence : " << triangle_sequence);
+	        // ROS_INFO_STREAM("Counter: " << counter);
+		int first_index = counter + triangle_sequence;
+		int second_index = first_index + j * 5;
+	        // ROS_INFO_STREAM("first_index : " << first_index);
+	        // ROS_INFO_STREAM("second_index : " << second_index);
+	        odomMsg.pose.covariance[first_index] =   double(data.pose_covariance[counter]);
+	        odomMsg.pose.covariance[second_index] =  double(data.pose_covariance[counter]);
+	        odomMsg.twist.covariance[first_index] =  double(data.velocity_covariance[counter]);
+	        odomMsg.twist.covariance[second_index] = double(data.velocity_covariance[counter]);
+
+		counter++;	
+
+	    }
+
+	}
+	
+	odomMsg.pose.covariance[35] =  double(data.pose_covariance[20]);
+	odomMsg.twist.covariance[35] = double(data.velocity_covariance[20]);
+	// ROS_INFO_STREAM("Output:");
+
+	// for (int i = 0; i < covariance_odom_size; i++) {
+	//     std::cout << odomMsg.pose.covariance[i] << " " ;
+	// }
+	// std::cout << std::endl;
+	// ROS_INFO_STREAM("END!");
+	    
+	
+
+	//ROS_INFO_STREAM("Velocity Covariance: ");
+	//for (int i = 0; i < covariance_length; i++) {
+	//    ROS_INFO_STREAM(data.velocity_covariance[i]);
+	//    odomMsg.twist.covariance[i] = data.velocity_covariance[i];
+	//}
+
         odomPublisher.publish(odomMsg);
     }
+
 
     return;
 }
