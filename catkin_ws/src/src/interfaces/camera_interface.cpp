@@ -35,6 +35,16 @@
 #include "camera_interface.h"
 #include "camera_helpers.h"
 
+
+#include <vector>
+#include <fstream>
+#include <string>
+#include <sstream>      // std::stringstream
+#include <iostream>
+
+#include <unistd.h>
+
+
 static void _frame_cb(
     __attribute__((unused)) int ch,
                             camera_image_metadata_t meta, 
@@ -68,6 +78,10 @@ void CameraInterface::AdvertiseTopics(){
     m_rosImagePublisher = it.advertise(m_pipeName, 1);
 
     m_state = ST_AD;
+
+    if(strcmp(m_pipeName, "tof_depth") == 0){
+        m_cameraInfoPublisher = m_rosNodeHandle.advertise<sensor_msgs::CameraInfo>("camera_info", 5);
+    }
 
 }
 
@@ -151,7 +165,6 @@ static void _frame_cb(
         }
 
         publisher.publish(img);
-
     } else {
 
         img.step     = meta.width * GetStepSize(meta.format);
@@ -165,5 +178,15 @@ static void _frame_cb(
 
         publisher.publish(img);
 
+        if(strcmp(img.header.frame_id.c_str(), "tof_depth") == 0){
+            sensor_msgs::CameraInfo& cameraInfo = interface->GetCameraInfoMsg();
+            cameraInfo.header.frame_id = img.header.frame_id;
+            cameraInfo.header.stamp    = img.header.stamp;
+            cameraInfo.width           = meta.width;
+            cameraInfo.height          = meta.height;
+
+            ros::Publisher& cameraInfoPublisher = interface->GetCameraInfoPublisher();
+            cameraInfoPublisher.publish(cameraInfo);
+        }
     }
 }
