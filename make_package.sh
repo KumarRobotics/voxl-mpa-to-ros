@@ -1,6 +1,6 @@
 #!/bin/bash
 ################################################################################
-# Copyright (c) 2022 ModalAI, Inc. All rights reserved.
+# Copyright (c) 2023 ModalAI, Inc. All rights reserved.
 #
 # Semi-universal script for making a deb and ipk package. This is shared
 # between the vast majority of VOXL-SDK packages
@@ -19,7 +19,6 @@ set -e # exit on error to prevent bad ipk from being generated
 
 USETIMESTAMP=false
 MAKE_DEB=true
-MAKE_IPK=false
 
 print_usage(){
     echo ""
@@ -31,9 +30,6 @@ print_usage(){
     echo "  ./make_package.sh"
     echo "  ./make_package.sh deb"
     echo "        Build a DEB package"
-    echo ""
-    echo "  ./make_package.sh ipk"
-    echo "        Build an IPK package"
     echo ""
     echo "  ./make_package.sh timestamp"
     echo "  ./make_package.sh deb timestamp"
@@ -63,10 +59,6 @@ process_argument () {
         "-d"|"deb"|"debian"|"--deb"|"--debian")
             MAKE_DEB=true
             ;;
-        "-i"|"ipk"|"opkg"|"--ipk"|"--opkg")
-            MAKE_IPK=true
-            MAKE_DEB=false
-            ;;
         *)
             echo "invalid option"
             print_usage
@@ -87,12 +79,9 @@ done
 ################################################################################
 VERSION=$(cat pkg/control/control | grep "Version" | cut -d' ' -f 2)
 PACKAGE=$(cat pkg/control/control | grep "Package" | cut -d' ' -f 2)
-IPK_NAME=${PACKAGE}_${VERSION}.ipk
-
 
 DATA_DIR=pkg/data
 CONTROL_DIR=pkg/control
-IPK_DIR=pkg/IPK
 DEB_DIR=pkg/DEB
 
 echo "Package Name: " $PACKAGE
@@ -110,20 +99,29 @@ rm -rf $IPK_DIR
 rm -rf $DEB_DIR
 
 # remove old ipk and deb packages
-rm -f *.ipk
 rm -f *.deb
 
+
+
+
 ################################################################################
-## install compiled stuff into data directory with 'make install'
-## try this for all 3 possible build folders, some packages are multi-arch
-## so both 32 and 64 need installing to pkg directory.
+## ROS SPECIFIC STUFF
 ################################################################################
 
 # make sure build succeeded
-if ! [[ -d "misc_files" ]]; then
+if ! [[ -d "colcon_ws/install/" ]]; then
     echo "run build before make_package"
     exit 1
 fi
+
+
+ROS_DIST="foxy"
+mkdir -p $DATA_DIR/opt/ros/${ROS_DIST}/mpa_to_ros2
+cp -r colcon_ws/install/  $DATA_DIR/opt/ros/${ROS_DIST}/mpa_to_ros2
+cp -r colcon_ws/build/ $DATA_DIR/opt/ros/${ROS_DIST}/mpa_to_ros2
+
+
+
 
 ################################################################################
 ## install standard stuff common across ModalAI projects if they exist
@@ -152,38 +150,6 @@ fi
 if [ -d "bash_profile" ]; then
     sudo mkdir -p ${DATA_DIR}/home/root/.profile.d/
     sudo cp -R bash_profile/* ${DATA_DIR}/home/root/.profile.d/
-fi
-
-
-################################################################################
-# make an IPK
-################################################################################
-
-if $MAKE_IPK; then
-    echo "starting building IPK package"
-
-    ## make a folder dedicated to IPK building and make the required version file
-    mkdir $IPK_DIR
-    echo "2.0" > $IPK_DIR/debian-binary
-
-    ## add tar archives of data and control for the IPK package
-    cd $CONTROL_DIR/
-    tar --create --gzip -f ../../$IPK_DIR/control.tar.gz *
-    cd ../../
-    cd $DATA_DIR/
-    tar --create --gzip -f ../../$IPK_DIR/data.tar.gz *
-    cd ../../
-
-    ## update version with timestamp if enabled
-    if $USETIMESTAMP; then
-        dts=$(date +"%Y%m%d%H%M")
-        VERSION="${VERSION}_${dts}"
-        IPK_NAME=${PACKAGE}_${VERSION}.ipk
-        echo "new version with timestamp: $VERSION"
-    fi
-
-    ## use ar to make the final .ipk and place it in the repository root
-    ar -r $IPK_NAME $IPK_DIR/control.tar.gz $IPK_DIR/data.tar.gz $IPK_DIR/debian-binary
 fi
 
 ################################################################################

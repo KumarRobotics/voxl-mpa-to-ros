@@ -1,94 +1,59 @@
-# voxl_mpa_to_ros
+# voxl-mpa-to-ros2
 
-ROSNode that takes in mpa data and published it to ROS
+ROS2 Foxy Nodes that takes in mpa data and published it to ROS2
 
-## Build Instructions
+## Build Instructions if running directly on target (VOXL2)
+1. Ensure you have ros2 foxy installed on target - if not please execute the `./install_foxy.sh` command which will take about 20 minutes to run
+2. Once installed, proceed to `cd` into the `colcon_ws` directory and run a `colcon build`
+3. Once done, proceed to source the install/setup.script: `source install/setup.bash`
+4. Once this is done the user can now run the voxl-mpa-to-ros2 code base by running `ros2 run voxl_mpa_to_ros2 voxl_mpa_to_ros2`
 
-1. Requires the voxl-emulator (found [here](https://gitlab.com/voxl-public/support/voxl-docker)) to run docker ARM image
-    * (PC) ```cd [Path To]/voxl-mpa-to-ros```
-    * (PC) ```sudo voxl-docker -i voxl-emulator```
+## Build Instructions if running in qrb5165-emulator and pushing to voxl2 post build
+
+1. Requires the qrb5165-emulator (found [here](https://gitlab.com/voxl-public/support/voxl-docker)) to run docker ARM image
+    * (PC) ```cd [Path To]/voxl-mpa-to-ros2```
+    * (PC) ```git submodule update --init --recursive```
+    * (PC) ```voxl-docker -i qrb5165-emulator```
 2. Build project binary:
-    * (VOXL-EMULATOR) ```./install_build_deps.sh apq8096 stable```
-    * (VOXL-EMULATOR) ```./clean.sh```
-    * (VOXL-EMULATOR) ```./build.sh```
-    * (VOXL-EMULATOR) ```./make_package.sh ipk```
+    * (qrb5165-emulator) ```./install_build_deps.sh qrb5165 stable```
+    * (qrb5165-emulator) ```./clean.sh```
+    * (qrb5165-emulator) ```./build.sh qrb5165```
+    * (qrb5165-emulator) ```./make_package.sh```
 
 
 ### Installation
-Install mpa-to-ros by running (VOXL):
-```
-opkg install voxl-mpa-to-ros
-```
-or (VOXL2/RB5):
-```
-apt install voxl-mpa-to-ros
-```
+Install mpa-to-ros2 by running (VOXL):
 
-If you're running a version of the voxl sdk <= 0.5.0 this package was found under voxl-nodes and can be installed with:
-```
-opkg install voxl-nodes
-```
+(VOXL2/RB5):
 
-### Start Installed MPA ROS Node
+```apt install voxl-mpa-to-ros2```
 
-Run the following commands(on voxl):
+### Start Installed MPA ROS2 Node
 
-Verify your ros environment with:
-```
-vi ~/my_ros_env.sh
-```
+Run the following commands(on voxl2):
 
-if you make any changes make sure to run ```exec bash``` to re-source the file
+Source the ros2 foxy setup script:
 
-and then start the node with:
+```source /opt/ros/foxy/setup.bash```
 
-```
-roslaunch voxl_mpa_to_ros voxl_mpa_to_ros.launch
-```
+You can then run the nodes with: 
+
+```ros2 launch voxl_mpa_to_ros2 voxl_mpa_to_ros2.launch```
 
 ##### Supported Interfaces
-The current supported mpa->ros translations are:  
+The current supported mpa->ros2 translations are:  
 
--cameras from voxl-camera-server or any services that publish an overlay
+-cameras from voxl-camera-server or any services that publish an overlay (other than encoded images - only raw)
 
 -IMUs
 
--VIO data from voxl-qvio-server (the data will appear under the qvio name, but it is normal vio data)  
+-6DOF data from voxl-qvio-server
 
 -Point Clouds from the TOF sensor or services providing point clouds such as voxl-dfs-server
 
--AI Detections from voxl-tflite-server
-
 ### Expected Behavior
 ```
-voxl:/$ roslaunch voxl_mpa_to_ros voxl_mpa_to_ros.launch
-... logging to /home/root/.ros/log/5ef19600-cbd7-11ec-8a51-ec5c68cd23bd/roslaunch-apq8096-3468.log
-Checking log directory for disk usage. This may take awhile.
-Press Ctrl-C to interrupt
-Done checking log file disk usage. Usage is <1GB.
-
-started roslaunch server http://192.168.1.58:46256/
-
-SUMMARY
-========
-
-PARAMETERS
- * /rosdistro: indigo
- * /rosversion: 1.11.21
-
-NODES
-  /
-    voxl_mpa_to_ros_node (voxl_mpa_to_ros/voxl_mpa_to_ros_node)
-
-auto-starting new master
-process[master]: started with pid [3487]
-ROS_MASTER_URI=http://192.168.1.58:11311/
-
-setting /run_id to 5ef19600-cbd7-11ec-8a51-ec5c68cd23bd
-process[rosout-1]: started with pid [3500]
-started core service [/rosout]
-process[voxl_mpa_to_ros_node-2]: started with pid [3503]
-
+voxl:/$ ros2 launch voxl_mpa_to_ros2 voxl_mpa_to_ros2.launch
 
 MPA to ROS app is now running
 
@@ -99,5 +64,4 @@ Found new interface: tof_ir
 Found new interface: tof_noise
 Found new interface: tracking
 Found new interface: tof_pc
-
 ```

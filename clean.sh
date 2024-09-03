@@ -1,22 +1,20 @@
 #!/bin/bash
 #
-# Modal AI Inc. 2022
-# author: james@modalai.com
+# Modal AI Inc. 2023
+# author: zachary.lowell@ascendengineer.com
 
 
-rm -rf build/
-rm -rf build32/
-rm -rf build64/
-rm -rf pkg/control.tar.gz
-rm -rf pkg/data/
-rm -rf pkg/data.tar.gz
-rm -rf pkg/DEB/
-rm -rf pkg/IPK/
-rm -rf *.ipk
-rm -rf *.deb
-rm -rf .bash_history
+sudo rm -rf build/
+sudo rm -rf build32/
+sudo rm -rf build64/
+sudo rm -rf pkg/control.tar.gz
+sudo rm -rf pkg/data/
+sudo rm -rf pkg/data.tar.gz
+sudo rm -rf pkg/DEB/
+sudo rm -rf pkg/IPK/
+sudo rm -rf *.deb
+sudo rm -rf .bash_history
 
-rm -rf catkin_ws/build/
-rm -rf catkin_ws/install/
-rm -rf catkin_ws/devel/
-rm -rf misc_files
+sudo rm -rf colcon_ws/build/
+sudo rm -rf colcon_ws/install/
+sudo rm -rf colcon_ws/log/

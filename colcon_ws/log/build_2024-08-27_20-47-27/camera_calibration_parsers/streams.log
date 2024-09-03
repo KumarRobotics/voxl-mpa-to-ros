@@ -1,0 +1,49 @@
+[0.097s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers -- -j8 -l8
+[0.293s] [ 14%] Built target gtest_main
+[0.313s] [ 42%] Built target camera_calibration_parsers
+[0.340s] [ 57%] Built target gtest
+[0.448s] [ 71%] Built target convert
+[0.473s] [ 85%] Built target camera_calibration_parsers-parse_ini
+[0.474s] [100%] Built target camera_calibration_parsers-parse_yml
+[0.761s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers -- -j8 -l8
+[1.063s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers --target install -- -j8 -l8
+[1.221s] [ 14%] Built target gtest_main
+[1.231s] [ 42%] Built target camera_calibration_parsers
+[1.256s] [ 57%] Built target gtest
+[1.283s] [ 71%] Built target convert
+[1.355s] [100%] Built target camera_calibration_parsers-parse_ini
+[1.356s] [100%] Built target camera_calibration_parsers-parse_yml
+[1.451s] [36mInstall the project...[0m
+[1.491s] -- Install configuration: ""
+[1.492s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib/libcamera_calibration_parsers.so
+[1.493s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib/camera_calibration_parsers/convert
+[1.495s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include
+[1.497s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers
+[1.498s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
+[1.499s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers/parse.hpp
+[1.503s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_ini.h
+[1.505s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_ini.hpp
+[1.507s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_yml.h
+[1.508s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_yml.hpp
+[1.509s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/include/camera_calibration_parsers/visibility_control.hpp
+[1.515s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/library_path.sh
+[1.524s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/library_path.dsv
+[1.529s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/ament_index/resource_index/package_run_dependencies/camera_calibration_parsers
+[1.530s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/ament_index/resource_index/parent_prefix_path/camera_calibration_parsers
+[1.534s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/ament_prefix_path.sh
+[1.535s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/ament_prefix_path.dsv
+[1.536s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/path.sh
+[1.538s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/path.dsv
+[1.542s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.bash
+[1.543s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.sh
+[1.544s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.zsh
+[1.545s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.dsv
+[1.553s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/package.dsv
+[1.553s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/ament_index/resource_index/packages/camera_calibration_parsers
+[1.554s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.555s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_libraries-extras.cmake
+[1.556s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.557s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig.cmake
+[1.558s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig-version.cmake
+[1.559s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/share/camera_calibration_parsers/package.xml
+[1.562s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers --target install -- -j8 -l8

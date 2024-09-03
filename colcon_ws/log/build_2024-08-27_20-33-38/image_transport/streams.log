@@ -1,0 +1,93 @@
+[0.106s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport -- -j8 -l8
+[0.245s] [  6%] Built target gtest
+[0.277s] [ 13%] Built target gtest_main
+[0.331s] [ 40%] Built target image_transport
+[0.429s] [ 46%] Built target republish
+[0.459s] [ 53%] Built target image_transport-message_passing
+[0.476s] [ 60%] Built target image_transport-subscriber
+[0.498s] [ 66%] Built target image_transport-camera_common
+[0.498s] [ 73%] Built target image_transport_plugins
+[0.505s] [ 80%] Built target image_transport-remapping
+[0.506s] [ 86%] Built target image_transport-single_subscriber_publisher
+[0.513s] [ 93%] Built target image_transport-publisher
+[0.524s] [100%] Built target list_transports
+[0.635s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport -- -j8 -l8
+[1.037s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport --target install -- -j8 -l8
+[1.151s] [  6%] Built target gtest_main
+[1.164s] [ 13%] Built target gtest
+[1.197s] [ 40%] Built target image_transport
+[1.271s] [ 46%] Built target republish
+[1.276s] [ 53%] Built target image_transport-camera_common
+[1.285s] [ 60%] Built target image_transport-message_passing
+[1.286s] [ 66%] Built target image_transport-subscriber
+[1.287s] [ 73%] Built target image_transport_plugins
+[1.294s] [ 80%] Built target image_transport-remapping
+[1.299s] [ 86%] Built target list_transports
+[1.358s] [ 93%] Built target image_transport-publisher
+[1.363s] [100%] Built target image_transport-single_subscriber_publisher
+[1.438s] [36mInstall the project...[0m
+[1.482s] -- Install configuration: ""
+[1.483s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/default_plugins.xml
+[1.484s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/libimage_transport.so
+[1.485s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/libimage_transport_plugins.so
+[1.486s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/image_transport/list_transports
+[1.488s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/image_transport/republish
+[1.489s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include
+[1.490s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport
+[1.491s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_common.h
+[1.492s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_common.hpp
+[1.493s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_publisher.h
+[1.494s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_publisher.hpp
+[1.496s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_subscriber.h
+[1.501s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_subscriber.hpp
+[1.504s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/exception.h
+[1.505s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/exception.hpp
+[1.505s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.h
+[1.507s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.hpp
+[1.509s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/loader_fwds.h
+[1.510s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/loader_fwds.hpp
+[1.511s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher.h
+[1.512s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher.hpp
+[1.514s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher_plugin.h
+[1.515s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher_plugin.hpp
+[1.516s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_publisher.h
+[1.517s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_publisher.hpp
+[1.518s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_subscriber.h
+[1.519s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_subscriber.hpp
+[1.519s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_publisher_plugin.h
+[1.520s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_publisher_plugin.hpp
+[1.521s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_subscriber_plugin.h
+[1.522s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_subscriber_plugin.hpp
+[1.523s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/single_subscriber_publisher.h
+[1.525s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/single_subscriber_publisher.hpp
+[1.526s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber.h
+[1.526s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber.hpp
+[1.527s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_filter.h
+[1.532s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_filter.hpp
+[1.532s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_plugin.h
+[1.533s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_plugin.hpp
+[1.535s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/transport_hints.h
+[1.537s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/transport_hints.hpp
+[1.538s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/visibility_control.hpp
+[1.538s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/library_path.sh
+[1.539s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/library_path.dsv
+[1.540s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/package_run_dependencies/image_transport
+[1.541s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/parent_prefix_path/image_transport
+[1.543s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/ament_prefix_path.sh
+[1.543s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/ament_prefix_path.dsv
+[1.547s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/path.sh
+[1.548s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/path.dsv
+[1.549s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.bash
+[1.549s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.sh
+[1.552s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.zsh
+[1.554s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.dsv
+[1.555s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/package.dsv
+[1.556s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/packages/image_transport
+[1.557s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/image_transport__pluginlib__plugin/image_transport
+[1.558s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.559s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/ament_cmake_export_libraries-extras.cmake
+[1.560s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.561s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/image_transportConfig.cmake
+[1.563s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/image_transportConfig-version.cmake
+[1.564s] -- Up-to-date: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/package.xml
+[1.584s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport --target install -- -j8 -l8

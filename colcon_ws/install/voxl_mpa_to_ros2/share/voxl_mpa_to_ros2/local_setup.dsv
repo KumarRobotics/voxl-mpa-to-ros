@@ -1,0 +1,2 @@
+source;share/voxl_mpa_to_ros2/environment/ament_prefix_path.sh
+source;share/voxl_mpa_to_ros2/environment/path.sh

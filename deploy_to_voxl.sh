@@ -1,8 +1,8 @@
 #!/bin/bash
 ################################################################################
-# Copyright (c) 2022 ModalAI, Inc. All rights reserved.
+# Copyright (c) 2023 ModalAI, Inc. All rights reserved.
 #
-# Installs the ipk or deb package on target.
+# Installs the deb package on target.
 # Requires the package to be built and an adb connection.
 ################################################################################
 set -e
@@ -15,16 +15,11 @@ OPKG_CHECK_STRING='command -v opkg &> /dev/null; echo -n $?'
 PACKAGE=$(cat pkg/control/control | grep "Package" | cut -d' ' -f 2)
 
 # count package files in current directory
-NUM_IPK=$(ls -1q $PACKAGE*.ipk 2>/dev/null | wc -l)
 NUM_DEB=$(ls -1q $PACKAGE*.deb 2>/dev/null | wc -l)
 
-if [[ $NUM_IPK -eq "0" && $NUM_DEB -eq "0" ]]; then
-	echo "ERROR: missing ipk and/or deb"
+if [[ $NUM_DEB -eq "0" ]]; then
+	echo "ERROR: missing deb"
 	echo "run make_package.sh first"
-	exit 1
-elif [[ $NUM_IPK -gt "1" || $NUM_DEB -gt "1" ]]; then
-	echo "ERROR: more than 1 ipk or deb file found"
-	echo "make sure there is at most one of each in the current directory"
 	exit 1
 fi
 
@@ -100,12 +95,6 @@ if [ "$DEPLOY_MODE" == "ssh" ]; then
 		sshpass -p oelinux123 scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $FILE root@$SEND_IP:/data/$FILE &>/dev/null
 		sshpass -p oelinux123 ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@$SEND_IP "dpkg -i --force-downgrade --force-depends /data/$FILE" 2>/dev/null
 
-	elif sshpass -p oelinux123 ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@$SEND_IP "$OPKG_CHECK_STRING" 2>/dev/null | grep -q 0 ; then
-		echo "opkg detected";
-		FILE=$(ls -1q $PACKAGE*.ipk)
-		sshpass -p oelinux123 scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $FILE root@$SEND_IP:/data/$FILE &>/dev/null
-		sshpass -p oelinux123 ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@$SEND_IP "opkg install --force-reinstall --force-downgrade --force-depends --force-overwrite /data/$FILE" 2>/dev/null
-
 	else
 		echo "ERROR neither dpkg nor opkg found on VOXL"
 		exit 1
@@ -129,12 +118,6 @@ else
 		FILE=$(ls -1q $PACKAGE*.deb)
 		adb push $FILE /data/$FILE
 		adb shell "dpkg -i --force-downgrade --force-depends /data/$FILE"
-
-	elif adb shell "$OPKG_CHECK_STRING" | grep -q 0 ; then
-		echo "opkg detected";
-		FILE=$(ls -1q $PACKAGE*.ipk)
-		adb push $FILE /data/$FILE
-		adb shell "opkg install --force-reinstall --force-downgrade --force-depends --force-overwrite /data/$FILE"
 
 	else
 		echo "ERROR neither dpkg nor opkg found on VOXL"

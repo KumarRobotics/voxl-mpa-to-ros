@@ -1,0 +1,6 @@
+In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/qvio_interface.h:42:0[m[K,
+                 from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/qvio_interface.cpp:34[m[K:
+[01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+                                      [01;35m[K^~[m[K

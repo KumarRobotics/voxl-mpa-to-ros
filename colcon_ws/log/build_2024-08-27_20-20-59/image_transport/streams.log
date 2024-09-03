@@ -1,0 +1,184 @@
+[0.156s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake /home/root/voxl-mpa-to-ros2/colcon_ws/src/image_common/image_transport -DCMAKE_INSTALL_PREFIX=/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport
+[0.461s] -- The C compiler identification is GNU 7.5.0
+[0.634s] -- The CXX compiler identification is GNU 7.5.0
+[0.638s] -- Check for working C compiler: /usr/bin/cc
+[0.854s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.855s] -- Detecting C compiler ABI info
+[1.125s] -- Detecting C compiler ABI info - done
+[1.165s] -- Detecting C compile features
+[1.898s] -- Detecting C compile features - done
+[1.910s] -- Check for working CXX compiler: /usr/bin/c++
+[2.142s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.145s] -- Detecting CXX compiler ABI info
+[2.412s] -- Detecting CXX compiler ABI info - done
+[2.432s] -- Detecting CXX compile features
+[3.541s] -- Detecting CXX compile features - done
+[3.545s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[3.616s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[3.617s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.911s] -- Found message_filters: 3.2.7 (/opt/ros/foxy/share/message_filters/cmake)
+[3.918s] -- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+[3.963s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.988s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.991s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.157s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[4.198s] -- Found FastRTPS: /opt/ros/foxy/include  
+[4.276s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.324s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.325s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.326s] -- Looking for pthread.h
+[4.570s] -- Looking for pthread.h - found
+[4.571s] -- Looking for pthread_create
+[4.802s] -- Looking for pthread_create - not found
+[4.804s] -- Looking for pthread_create in pthreads
+[5.009s] -- Looking for pthread_create in pthreads - not found
+[5.010s] -- Looking for pthread_create in pthread
+[5.237s] -- Looking for pthread_create in pthread - found
+[5.245s] -- Found Threads: TRUE  
+[5.480s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[5.625s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.629s] -- Check if compiler accepts -pthread
+[5.801s] -- Check if compiler accepts -pthread - yes
+[6.144s] -- Configuring done
+[6.464s] -- Generating done
+[6.465s] -- Build files have been written to: /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport
+[6.474s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake /home/root/voxl-mpa-to-ros2/colcon_ws/src/image_common/image_transport -DCMAKE_INSTALL_PREFIX=/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport
+[6.483s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport -- -j8 -l8
+[6.692s] [35m[1mScanning dependencies of target image_transport[0m
+[6.737s] [35m[1mScanning dependencies of target gtest[0m
+[6.749s] [35m[1mScanning dependencies of target gtest_main[0m
+[6.779s] [  3%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[6.788s] [  6%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[6.928s] [ 10%] [32mBuilding CXX object CMakeFiles/image_transport.dir/src/camera_common.cpp.o[0m
+[6.961s] [ 13%] [32mBuilding CXX object CMakeFiles/image_transport.dir/src/camera_publisher.cpp.o[0m
+[6.962s] [ 16%] [32mBuilding CXX object CMakeFiles/image_transport.dir/src/subscriber.cpp.o[0m
+[6.965s] [ 20%] [32mBuilding CXX object CMakeFiles/image_transport.dir/src/single_subscriber_publisher.cpp.o[0m
+[6.978s] [ 23%] [32mBuilding CXX object CMakeFiles/image_transport.dir/src/publisher.cpp.o[0m
+[6.980s] [ 26%] [32mBuilding CXX object CMakeFiles/image_transport.dir/src/camera_subscriber.cpp.o[0m
+[8.221s] [ 30%] [32mBuilding CXX object CMakeFiles/image_transport.dir/src/image_transport.cpp.o[0m
+[9.759s] [ 33%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[10.110s] [ 33%] Built target gtest_main
+[17.272s] [ 36%] [32m[1mLinking CXX static library libgtest.a[0m
+[17.543s] [ 36%] Built target gtest
+[24.768s] [ 40%] [32m[1mLinking CXX shared library libimage_transport.so[0m
+[26.389s] [ 40%] Built target image_transport
+[26.410s] [35m[1mScanning dependencies of target image_transport-publisher[0m
+[26.417s] [35m[1mScanning dependencies of target list_transports[0m
+[26.460s] [35m[1mScanning dependencies of target image_transport-camera_common[0m
+[26.471s] [35m[1mScanning dependencies of target image_transport-remapping[0m
+[26.474s] [35m[1mScanning dependencies of target image_transport-message_passing[0m
+[26.486s] [35m[1mScanning dependencies of target republish[0m
+[26.489s] [ 43%] [32mBuilding CXX object CMakeFiles/image_transport-publisher.dir/test/test_publisher.cpp.o[0m
+[26.491s] [35m[1mScanning dependencies of target image_transport_plugins[0m
+[26.495s] [35m[1mScanning dependencies of target image_transport-subscriber[0m
+[26.508s] [ 46%] [32mBuilding CXX object CMakeFiles/list_transports.dir/src/list_transports.cpp.o[0m
+[26.555s] [ 50%] [32mBuilding CXX object CMakeFiles/image_transport-camera_common.dir/test/test_camera_common.cpp.o[0m
+[26.609s] [ 53%] [32mBuilding CXX object CMakeFiles/image_transport_plugins.dir/src/manifest.cpp.o[0m
+[26.613s] [ 56%] [32mBuilding CXX object CMakeFiles/image_transport-remapping.dir/test/test_remapping.cpp.o[0m
+[26.623s] [ 60%] [32mBuilding CXX object CMakeFiles/republish.dir/src/republish.cpp.o[0m
+[26.655s] [ 63%] [32mBuilding CXX object CMakeFiles/image_transport-subscriber.dir/test/test_subscriber.cpp.o[0m
+[26.672s] [ 66%] [32mBuilding CXX object CMakeFiles/image_transport-message_passing.dir/test/test_message_passing.cpp.o[0m
+[29.492s] [ 70%] [32m[1mLinking CXX executable image_transport-camera_common[0m
+[31.150s] [ 70%] Built target image_transport-camera_common
+[31.211s] [35m[1mScanning dependencies of target image_transport-single_subscriber_publisher[0m
+[31.412s] [ 73%] [32mBuilding CXX object CMakeFiles/image_transport-single_subscriber_publisher.dir/test/test_single_subscriber_publisher.cpp.o[0m
+[35.521s] [ 76%] [32m[1mLinking CXX executable image_transport-publisher[0m
+[35.765s] [ 80%] [32m[1mLinking CXX executable image_transport-subscriber[0m
+[36.272s] [ 83%] [32m[1mLinking CXX executable image_transport-message_passing[0m
+[36.791s] [ 86%] [32m[1mLinking CXX executable image_transport-remapping[0m
+[38.889s] [ 86%] Built target image_transport-subscriber
+[38.950s] [ 86%] Built target image_transport-publisher
+[39.322s] [ 86%] Built target image_transport-message_passing
+[39.661s] [ 86%] Built target image_transport-remapping
+[40.555s] [ 90%] [32m[1mLinking CXX executable image_transport-single_subscriber_publisher[0m
+[42.041s] [ 93%] [32m[1mLinking CXX executable list_transports[0m
+[43.238s] [ 96%] [32m[1mLinking CXX shared library libimage_transport_plugins.so[0m
+[43.582s] [100%] [32m[1mLinking CXX executable republish[0m
+[43.748s] [100%] Built target image_transport-single_subscriber_publisher
+[43.985s] [100%] Built target list_transports
+[44.928s] [100%] Built target republish
+[44.929s] [100%] Built target image_transport_plugins
+[44.997s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport -- -j8 -l8
+[45.432s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport --target install -- -j8 -l8
+[45.686s] [  6%] Built target gtest_main
+[45.690s] [ 13%] Built target gtest
+[45.808s] [ 40%] Built target image_transport
+[45.909s] [ 46%] Built target image_transport-remapping
+[45.928s] [ 53%] Built target image_transport-camera_common
+[45.938s] [ 60%] Built target list_transports
+[45.947s] [ 66%] Built target image_transport-publisher
+[45.954s] [ 73%] Built target image_transport_plugins
+[45.957s] [ 80%] Built target image_transport-subscriber
+[45.968s] [ 86%] Built target image_transport-message_passing
+[45.997s] [ 93%] Built target republish
+[46.034s] [100%] Built target image_transport-single_subscriber_publisher
+[46.164s] [36mInstall the project...[0m
+[46.185s] -- Install configuration: ""
+[46.187s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/default_plugins.xml
+[46.190s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/libimage_transport.so
+[46.197s] -- Set runtime path of "/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/libimage_transport.so" to ""
+[46.199s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/libimage_transport_plugins.so
+[46.202s] -- Set runtime path of "/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/libimage_transport_plugins.so" to ""
+[46.204s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/image_transport/list_transports
+[46.211s] -- Set runtime path of "/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/image_transport/list_transports" to ""
+[46.214s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/image_transport/republish
+[46.216s] -- Set runtime path of "/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib/image_transport/republish" to ""
+[46.217s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include
+[46.218s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport
+[46.220s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_common.h
+[46.222s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_common.hpp
+[46.223s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_publisher.h
+[46.224s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_publisher.hpp
+[46.226s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_subscriber.h
+[46.228s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/camera_subscriber.hpp
+[46.231s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/exception.h
+[46.234s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/exception.hpp
+[46.245s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.h
+[46.250s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.hpp
+[46.252s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/loader_fwds.h
+[46.253s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/loader_fwds.hpp
+[46.256s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher.h
+[46.258s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher.hpp
+[46.259s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher_plugin.h
+[46.262s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher_plugin.hpp
+[46.265s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_publisher.h
+[46.266s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_publisher.hpp
+[46.269s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_subscriber.h
+[46.271s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/raw_subscriber.hpp
+[46.273s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_publisher_plugin.h
+[46.281s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_publisher_plugin.hpp
+[46.283s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_subscriber_plugin.h
+[46.287s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/simple_subscriber_plugin.hpp
+[46.288s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/single_subscriber_publisher.h
+[46.291s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/single_subscriber_publisher.hpp
+[46.294s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber.h
+[46.297s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber.hpp
+[46.300s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_filter.h
+[46.304s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_filter.hpp
+[46.312s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_plugin.h
+[46.315s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/subscriber_plugin.hpp
+[46.322s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/transport_hints.h
+[46.325s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/transport_hints.hpp
+[46.326s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/visibility_control.hpp
+[46.329s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/library_path.sh
+[46.332s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/library_path.dsv
+[46.335s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/package_run_dependencies/image_transport
+[46.337s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/parent_prefix_path/image_transport
+[46.340s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/ament_prefix_path.sh
+[46.344s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/ament_prefix_path.dsv
+[46.346s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/path.sh
+[46.356s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/environment/path.dsv
+[46.365s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.bash
+[46.366s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.sh
+[46.371s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.zsh
+[46.373s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/local_setup.dsv
+[46.375s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/package.dsv
+[46.383s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/packages/image_transport
+[46.385s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/ament_index/resource_index/image_transport__pluginlib__plugin/image_transport
+[46.388s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/ament_cmake_export_include_directories-extras.cmake
+[46.395s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/ament_cmake_export_libraries-extras.cmake
+[46.397s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.402s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/image_transportConfig.cmake
+[46.405s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake/image_transportConfig-version.cmake
+[46.408s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/package.xml
+[46.414s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/image_transport --target install -- -j8 -l8

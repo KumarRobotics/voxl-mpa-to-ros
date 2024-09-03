@@ -1,0 +1,25 @@
+[1.122s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_offboard_figure8': PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_offboard_figure8/prefix_override:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:${PYTHONPATH} SHLVL=3 _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/voxl_offboard_figure8 build --build-base /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_offboard_figure8/build install --record /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_offboard_figure8/install.log --install-scripts $base/lib/voxl_offboard_figure8 --single-version-externally-managed
+[1.418s] /usr/local/lib/python3.6/dist-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.418s]   % (opt, underscore_opt)
+[1.549s] running egg_info
+[1.551s] writing ../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info/PKG-INFO
+[1.551s] writing dependency_links to ../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info/dependency_links.txt
+[1.552s] writing entry points to ../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info/entry_points.txt
+[1.553s] writing requirements to ../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info/requires.txt
+[1.555s] writing top-level names to ../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info/top_level.txt
+[1.557s] reading manifest file '../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info/SOURCES.txt'
+[1.559s] writing manifest file '../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info/SOURCES.txt'
+[1.560s] running build
+[1.561s] running build_py
+[1.562s] running install
+[1.563s] running install_lib
+[1.564s] /usr/local/lib/python3.6/dist-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.565s]   setuptools.SetuptoolsDeprecationWarning,
+[1.566s] running install_data
+[1.567s] running install_egg_info
+[1.568s] removing '/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages/voxl_offboard_figure8-0.0.0-py3.6.egg-info' (and everything under it)
+[1.568s] Copying ../../build/voxl_offboard_figure8/voxl_offboard_figure8.egg-info to /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages/voxl_offboard_figure8-0.0.0-py3.6.egg-info
+[1.569s] running install_scripts
+[1.576s] Installing voxl_offboard_figure8 script to /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/voxl_offboard_figure8
+[1.577s] writing list of installed files to '/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_offboard_figure8/install.log'
+[1.592s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_offboard_figure8' returned '0': PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_offboard_figure8/prefix_override:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:${PYTHONPATH} SHLVL=3 _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/voxl_offboard_figure8 build --build-base /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_offboard_figure8/build install --record /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_offboard_figure8/install.log --install-scripts $base/lib/voxl_offboard_figure8 --single-version-externally-managed

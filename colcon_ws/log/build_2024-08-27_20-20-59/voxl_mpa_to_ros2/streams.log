@@ -1,0 +1,209 @@
+[0.132s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2': CMAKE_PREFIX_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_common:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers:/opt/ros/foxy:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 LD_LIBRARY_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:/opt/ros/foxy/lib/python3.6/site-packages SHLVL=3 _=/usr/bin/env /usr/bin/cmake /home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2 -DCMAKE_INSTALL_PREFIX=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2
+[0.347s] -- The C compiler identification is GNU 7.5.0
+[0.513s] -- The CXX compiler identification is GNU 7.5.0
+[0.526s] -- Check for working C compiler: /usr/bin/cc
+[0.855s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.859s] -- Detecting C compiler ABI info
+[1.210s] -- Detecting C compiler ABI info - done
+[1.247s] -- Detecting C compile features
+[2.242s] -- Detecting C compile features - done
+[2.256s] -- Check for working CXX compiler: /usr/bin/c++
+[2.629s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.639s] -- Detecting CXX compiler ABI info
+[2.957s] -- Detecting CXX compiler ABI info - done
+[2.989s] -- Detecting CXX compile features
+[4.598s] -- Detecting CXX compile features - done
+[4.606s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.689s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[4.693s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.025s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[5.035s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.046s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.295s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[5.357s] -- Found FastRTPS: /opt/ros/foxy/include  
+[5.471s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.493s] -- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+[5.496s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.543s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[5.545s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.547s] -- Looking for pthread.h
+[5.893s] -- Looking for pthread.h - found
+[5.898s] -- Looking for pthread_create
+[6.255s] -- Looking for pthread_create - not found
+[6.258s] -- Looking for pthread_create in pthreads
+[6.586s] -- Looking for pthread_create in pthreads - not found
+[6.587s] -- Looking for pthread_create in pthread
+[6.945s] -- Looking for pthread_create in pthread - found
+[6.954s] -- Found Threads: TRUE  
+[7.151s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[7.251s] -- Found px4_ros_com: 0.1.0 (/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com/share/px4_ros_com/cmake)
+[7.299s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[7.368s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[7.379s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[7.697s] -- Found image_transport: 2.4.0 (/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/share/image_transport/cmake)
+[7.720s] -- Found voxl_msgs: 0.0.0 (/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/share/voxl_msgs/cmake)
+[7.860s] -- Configuring done
+[7.902s] -- Generating done
+[7.906s] -- Build files have been written to: /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2
+[7.916s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2' returned '0': CMAKE_PREFIX_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_common:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers:/opt/ros/foxy:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 LD_LIBRARY_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:/opt/ros/foxy/lib/python3.6/site-packages SHLVL=3 _=/usr/bin/env /usr/bin/cmake /home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2 -DCMAKE_INSTALL_PREFIX=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2
+[7.940s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2': CMAKE_PREFIX_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_common:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers:/opt/ros/foxy:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 LD_LIBRARY_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:/opt/ros/foxy/lib/python3.6/site-packages SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2 -- -j8 -l8
+[8.167s] [35m[1mScanning dependencies of target voxl_mpa_to_ros2_node[0m
+[8.336s] [  8%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/utils/common_utils.cpp.o[0m
+[8.343s] [ 25%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/point_cloud_interface.cpp.o[0m
+[8.344s] [ 25%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/qvio_interface.cpp.o[0m
+[8.349s] [ 33%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/ai_detection_interface.cpp.o[0m
+[8.355s] [ 41%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/stereo_interface.cpp.o[0m
+[8.369s] [ 50%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/imu_interface.cpp.o[0m
+[8.370s] [ 58%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/pose_vel_6dof_interface.cpp.o[0m
+[8.376s] [ 66%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/camera_interface.cpp.o[0m
+[8.922s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/stereo_interface.h:38:0[m[K,
+[8.922s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:36[m[K:
+[8.922s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.h:41:89:[m[K [01;36m[Knote: [m[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead
+[8.923s]  #pragma message ("Warning: This header is deprecated. Use 'image_transport.hpp' instead"[01;36m[K)[m[K
+[8.923s]                                                                                          [01;36m[K^[m[K
+[9.134s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/camera_interface.h:38:0[m[K,
+[9.134s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/camera_interface.cpp:37[m[K:
+[9.134s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.h:41:89:[m[K [01;36m[Knote: [m[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead
+[9.134s]  #pragma message ("Warning: This header is deprecated. Use 'image_transport.hpp' instead"[01;36m[K)[m[K
+[9.134s]                                                                                          [01;36m[K^[m[K
+[10.757s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/stereo_interface.h:39:0[m[K,
+[10.757s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:36[m[K:
+[10.757s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher.h:41:83:[m[K [01;36m[Knote: [m[K#pragma message: Warning: This header is deprecated. Use 'publisher.hpp' instead
+[10.757s]  #pragma message ("Warning: This header is deprecated. Use 'publisher.hpp' instead"[01;36m[K)[m[K
+[10.757s]                                                                                    [01;36m[K^[m[K
+[11.172s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/camera_interface.h:39:0[m[K,
+[11.173s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/camera_interface.cpp:37[m[K:
+[11.173s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher.h:41:83:[m[K [01;36m[Knote: [m[K#pragma message: Warning: This header is deprecated. Use 'publisher.hpp' instead
+[11.173s]  #pragma message ("Warning: This header is deprecated. Use 'publisher.hpp' instead"[01;36m[K)[m[K
+[11.173s]                                                                                    [01;36m[K^[m[K
+[11.659s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/ai_detection_interface.h:37:0[m[K,
+[11.660s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/ai_detection_interface.cpp:34[m[K:
+[11.660s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[11.660s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[11.660s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[11.661s]                                       [01;35m[K^~[m[K
+[11.760s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/point_cloud_interface.h:39:0[m[K,
+[11.760s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/point_cloud_interface.cpp:36[m[K:
+[11.760s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[11.760s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[11.760s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[11.760s]                                       [01;35m[K^~[m[K
+[12.081s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/stereo_interface.h:41:0[m[K,
+[12.082s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:36[m[K:
+[12.082s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[12.082s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.082s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[12.083s]                                       [01;35m[K^~[m[K
+[12.482s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/pose_vel_6dof_interface.h:43:0[m[K,
+[12.482s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/pose_vel_6dof_interface.cpp:34[m[K:
+[12.483s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[12.483s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.483s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[12.483s]                                       [01;35m[K^~[m[K
+[12.517s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/imu_interface.h:40:0[m[K,
+[12.517s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/imu_interface.cpp:34[m[K:
+[12.517s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[12.517s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.517s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[12.518s]                                       [01;35m[K^~[m[K
+[12.636s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/qvio_interface.h:42:0[m[K,
+[12.636s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/qvio_interface.cpp:34[m[K:
+[12.637s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[12.637s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.637s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[12.637s]                                       [01;35m[K^~[m[K
+[12.690s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/camera_interface.h:41:0[m[K,
+[12.690s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/camera_interface.cpp:37[m[K:
+[12.690s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[12.690s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.690s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[12.691s]                                       [01;35m[K^~[m[K
+[13.093s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:[m[K In constructor ‘[01m[KStereoInterface::StereoInterface(rclcpp::Node::SharedPtr, const char*)[m[K’:
+[13.093s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:44:1:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive writing up to 95 bytes into a region of size 64 [[01;35m[K-Wformat-overflow=[m[K]
+[13.093s]  [01;35m[KStereoInterface[m[K::StereoInterface(
+[13.093s]  [01;35m[K^~~~~~~~~~~~~~~[m[K
+[13.094s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:52:12:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output between 6 and 101 bytes into a destination of size 64
+[13.094s]      [01;36m[Ksprintf(frameName, "%s/left", m_pipeName)[m[K;
+[13.094s]      [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.094s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:44:1:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive writing up to 95 bytes into a region of size 64 [[01;35m[K-Wformat-overflow=[m[K]
+[13.094s]  [01;35m[KStereoInterface[m[K::StereoInterface(
+[13.094s]  [01;35m[K^~~~~~~~~~~~~~~[m[K
+[13.095s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:56:12:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output between 7 and 102 bytes into a destination of size 64
+[13.095s]      [01;36m[Ksprintf(frameName, "%s/right", m_pipeName)[m[K;
+[13.095s]      [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.100s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:[m[K In member function ‘[01m[Kvirtual void StereoInterface::AdvertiseTopics()[m[K’:
+[13.101s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:70:6:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive writing up to 95 bytes into a region of size 64 [[01;35m[K-Wformat-overflow=[m[K]
+[13.101s]  void [01;35m[KStereoInterface[m[K::AdvertiseTopics(){
+[13.101s]       [01;35m[K^~~~~~~~~~~~~~~[m[K
+[13.101s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:76:12:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output between 6 and 101 bytes into a destination of size 64
+[13.101s]      [01;36m[Ksprintf(topicName, "%s/left", m_pipeName)[m[K;
+[13.102s]      [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.102s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:70:6:[m[K [01;35m[Kwarning: [m[K‘[01m[K%s[m[K’ directive writing up to 95 bytes into a region of size 64 [[01;35m[K-Wformat-overflow=[m[K]
+[13.102s]  void [01;35m[KStereoInterface[m[K::AdvertiseTopics(){
+[13.102s]       [01;35m[K^~~~~~~~~~~~~~~[m[K
+[13.102s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interfaces/stereo_interface.cpp:79:12:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output between 7 and 102 bytes into a destination of size 64
+[13.103s]      [01;36m[Ksprintf(topicName, "%s/right", m_pipeName)[m[K;
+[13.103s]      [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.272s] [ 75%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/utils/camera_helpers.cpp.o[0m
+[13.333s] [ 83%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interface_manager.cpp.o[0m
+[13.682s] [ 91%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/mpa_ros_node.cpp.o[0m
+[16.206s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interface_manager.h:37:0[m[K,
+[16.206s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/mpa_ros_node.cpp:41[m[K:
+[16.208s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[16.208s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[16.209s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[16.209s]                                       [01;35m[K^~[m[K
+[16.903s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/all_interfaces.h:37:0[m[K,
+[16.905s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interface_manager.cpp:36[m[K:
+[16.905s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:[m[K In static member function ‘[01m[Kstatic void GenericInterface::_interface_dc_cb(int, void*)[m[K’:
+[16.906s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/generic_interface.h:166:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kch[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[16.906s]      static void _interface_dc_cb(int [01;35m[Kch[m[K, void* context){
+[16.907s]                                       [01;35m[K^~[m[K
+[16.911s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/camera_interface.h:38:0[m[K,
+[16.912s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/all_interfaces.h:38[m[K,
+[16.912s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interface_manager.cpp:36[m[K:
+[16.913s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.h:[m[K At global scope:
+[16.914s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/image_transport.h:41:89:[m[K [01;36m[Knote: [m[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead
+[16.914s]  #pragma message ("Warning: This header is deprecated. Use 'image_transport.hpp' instead"[01;36m[K)[m[K
+[16.915s]                                                                                          [01;36m[K^[m[K
+[17.261s] In file included from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/camera_interface.h:39:0[m[K,
+[17.261s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/include/voxl_mpa_to_ros2/interfaces/all_interfaces.h:38[m[K,
+[17.262s]                  from [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interface_manager.cpp:36[m[K:
+[17.262s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/include/image_transport/publisher.h:41:83:[m[K [01;36m[Knote: [m[K#pragma message: Warning: This header is deprecated. Use 'publisher.hpp' instead
+[17.263s]  #pragma message ("Warning: This header is deprecated. Use 'publisher.hpp' instead"[01;36m[K)[m[K
+[17.264s]                                                                                    [01;36m[K^[m[K
+[17.433s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interface_manager.cpp:[m[K In function ‘[01m[Kint findPipes(InterfaceListNode*, rclcpp::Node::SharedPtr)[m[K’:
+[17.434s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interface_manager.cpp:111:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+[17.434s]      [01;35m[Kfor[m[K(tail = head; tail->next != NULL; tail = tail->next);
+[17.435s]      [01;35m[K^~~[m[K
+[17.435s] [01m[K/home/root/voxl-mpa-to-ros2/colcon_ws/src/voxl_mpa_to_ros2/src/interface_manager.cpp:113:2:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+[17.436s]   [01;36m[KFILE[m[K *fp = popen("voxl-list-pipes --mode-types", "r");
+[17.437s]   [01;36m[K^~~~[m[K
+[19.606s] [100%] [32m[1mLinking CXX executable voxl_mpa_to_ros2_node[0m
+[21.408s] [100%] Built target voxl_mpa_to_ros2_node
+[21.493s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2' returned '0': CMAKE_PREFIX_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_common:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers:/opt/ros/foxy:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 LD_LIBRARY_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:/opt/ros/foxy/lib/python3.6/site-packages SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2 -- -j8 -l8
+[21.846s] Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2': CMAKE_PREFIX_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_common:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers:/opt/ros/foxy:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 LD_LIBRARY_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:/opt/ros/foxy/lib/python3.6/site-packages SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2 --target install -- -j8 -l8
+[22.265s] [100%] Built target voxl_mpa_to_ros2_node
+[22.382s] [36mInstall the project...[0m
+[22.429s] -- Install configuration: ""
+[22.430s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/launch
+[22.431s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/launch/voxl_mpa_to_ros2.launch
+[22.432s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/lib/voxl_mpa_to_ros2/voxl_mpa_to_ros2_node
+[22.433s] -- Set runtime path of "/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/lib/voxl_mpa_to_ros2/voxl_mpa_to_ros2_node" to ""
+[22.435s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/ament_index/resource_index/package_run_dependencies/voxl_mpa_to_ros2
+[22.438s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/ament_index/resource_index/parent_prefix_path/voxl_mpa_to_ros2
+[22.446s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/environment/ament_prefix_path.sh
+[22.451s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/environment/ament_prefix_path.dsv
+[22.452s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/environment/path.sh
+[22.453s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/environment/path.dsv
+[22.454s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/local_setup.bash
+[22.455s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/local_setup.sh
+[22.456s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/local_setup.zsh
+[22.457s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/local_setup.dsv
+[22.459s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/package.dsv
+[22.461s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/ament_index/resource_index/packages/voxl_mpa_to_ros2
+[22.462s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.463s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/cmake/voxl_mpa_to_ros2Config.cmake
+[22.465s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/cmake/voxl_mpa_to_ros2Config-version.cmake
+[22.466s] -- Installing: /home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2/share/voxl_mpa_to_ros2/package.xml
+[22.469s] Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2' returned '0': CMAKE_PREFIX_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_mpa_to_ros2:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_common:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers:/opt/ros/foxy:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8 LD_LIBRARY_PATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_ros_com/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/image_transport/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_info_manager/lib:/home/root/voxl-mpa-to-ros2/colcon_ws/install/camera_calibration_parsers/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib PYTHONPATH=/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/px4_msgs/lib/python3.6/site-packages:/home/root/voxl-mpa-to-ros2/colcon_ws/install/voxl_offboard_figure8/lib/python3.6/site-packages:/opt/ros/foxy/lib/python3.6/site-packages SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/voxl_mpa_to_ros2 --target install -- -j8 -l8
