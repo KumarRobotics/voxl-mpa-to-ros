@@ -109,7 +109,7 @@ static void _helper_cb(__attribute__((unused))int ch, char* data, int bytes, voi
 
         // poseMsg.header.stamp = _clock_monotonic_to_ros_time(interface->getNodeHandle(), data.timestamp_ns);
         odomMsg.header.stamp = _clock_monotonic_to_ros_time(interface->getNodeHandle(), data.timestamp_ns);
-        odomMsg.header.frame_id = "map";
+        odomMsg.header.frame_id = "odom";
         odomMsg.child_frame_id = "base_link";
         // extract quaternion from {imu w.r.t vio} rotation matrix
         tf2::Matrix3x3 R(
@@ -135,8 +135,8 @@ static void _helper_cb(__attribute__((unused))int ch, char* data, int bytes, voi
         poseMsg.pose.position.y = -data.T_imu_wrt_vio[1];
         poseMsg.pose.position.z = -data.T_imu_wrt_vio[2];
         poseMsg.pose.orientation.x = q.getX();
-        poseMsg.pose.orientation.y = -q.getY();
-        poseMsg.pose.orientation.z = -q.getZ();
+        poseMsg.pose.orientation.y = q.getY();
+        poseMsg.pose.orientation.z = q.getZ();
         poseMsg.pose.orientation.w = q.getW();
         interface->pose_pub_->publish(poseMsg);
 
