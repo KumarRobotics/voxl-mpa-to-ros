@@ -65,11 +65,11 @@ void QVIOInterface::AdvertiseTopics(){
     char topicName[64];
 
     sprintf(topicName, "%s", m_pipeName);
-    // pose_pub_ = m_rosNodeHandle->create_publisher<geometry_msgs::msg::PoseStamped>
-    //     (topicName, rclcpp::SensorDataQoS());
+    pose_pub_ = m_rosNodeHandle->create_publisher<geometry_msgs::msg::PoseStamped>
+        ("/qvio/pose", rclcpp::SensorDataQoS());
 
     odom_pub_ = m_rosNodeHandle->create_publisher<nav_msgs::msg::Odometry>
-        (topicName, rclcpp::SensorDataQoS());
+        ("/qvio/odometry", rclcpp::SensorDataQoS());
 
     m_state = ST_AD;
 
@@ -109,7 +109,8 @@ static void _helper_cb(__attribute__((unused))int ch, char* data, int bytes, voi
 
         // poseMsg.header.stamp = _clock_monotonic_to_ros_time(interface->getNodeHandle(), data.timestamp_ns);
         odomMsg.header.stamp = _clock_monotonic_to_ros_time(interface->getNodeHandle(), data.timestamp_ns);
-
+        odomMsg.header.frame_id = "map";
+        odomMsg.child_frame_id = "base_link";
         // extract quaternion from {imu w.r.t vio} rotation matrix
         tf2::Matrix3x3 R(
             data.R_imu_to_vio[0][0],
@@ -123,23 +124,29 @@ static void _helper_cb(__attribute__((unused))int ch, char* data, int bytes, voi
             data.R_imu_to_vio[2][2]);
         tf2::Quaternion q;
         R.getRotation(q);
+	tf2::Quaternion rotation_180_x;
+	rotation_180_x.setRPY(M_PI, 0, 0);  // Roll = 180 degrees (PI radians), Pitch = 0, Yaw = 0
+
+	// Multiply the current quaternion by the 180-degree rotation quaternion
+	q = rotation_180_x * q;
+	q.normalize();
 
         poseMsg.pose.position.x = data.T_imu_wrt_vio[0];
-        poseMsg.pose.position.y = data.T_imu_wrt_vio[1];
-        poseMsg.pose.position.z = data.T_imu_wrt_vio[2];
+        poseMsg.pose.position.y = -data.T_imu_wrt_vio[1];
+        poseMsg.pose.position.z = -data.T_imu_wrt_vio[2];
         poseMsg.pose.orientation.x = q.getX();
-        poseMsg.pose.orientation.y = q.getY();
-        poseMsg.pose.orientation.z = q.getZ();
+        poseMsg.pose.orientation.y = -q.getY();
+        poseMsg.pose.orientation.z = -q.getZ();
         poseMsg.pose.orientation.w = q.getW();
-        // interface->pose_pub_->publish(poseMsg);
+        interface->pose_pub_->publish(poseMsg);
 
         odomMsg.pose.pose = poseMsg.pose;
         odomMsg.twist.twist.linear.x = data.vel_imu_wrt_vio[0];
-        odomMsg.twist.twist.linear.y = data.vel_imu_wrt_vio[1];
-        odomMsg.twist.twist.linear.z = data.vel_imu_wrt_vio[2];
+        odomMsg.twist.twist.linear.y = -data.vel_imu_wrt_vio[1];
+        odomMsg.twist.twist.linear.z = -data.vel_imu_wrt_vio[2];
         odomMsg.twist.twist.angular.x = data.imu_angular_vel[0];
-        odomMsg.twist.twist.angular.y = data.imu_angular_vel[1];
-        odomMsg.twist.twist.angular.z = data.imu_angular_vel[2];
+        odomMsg.twist.twist.angular.y = -data.imu_angular_vel[1];
+        odomMsg.twist.twist.angular.z = -data.imu_angular_vel[2];
 
         int triangle_sequence = 0;
         int counter = 0;
