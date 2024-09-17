@@ -1,6 +1,0 @@
-[35m[1mScanning dependencies of target voxl_mpa_to_ros2_node[0m
-[ 16%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/qvio_interface.cpp.o[0m
-[ 16%] [32mBuilding CXX object CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interface_manager.cpp.o[0m
-CMakeFiles/voxl_mpa_to_ros2_node.dir/build.make:182: recipe for target 'CMakeFiles/voxl_mpa_to_ros2_node.dir/src/interfaces/qvio_interface.cpp.o' failed
-CMakeFiles/Makefile2:131: recipe for target 'CMakeFiles/voxl_mpa_to_ros2_node.dir/all' failed
-Makefile:140: recipe for target 'all' failed

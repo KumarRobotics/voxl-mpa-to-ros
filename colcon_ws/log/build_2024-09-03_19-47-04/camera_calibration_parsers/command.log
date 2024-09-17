@@ -1,4 +1,0 @@
-Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers': SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers -- -j8 -l8
-Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers' returned '0': SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers -- -j8 -l8
-Invoking command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers': SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers --target install -- -j8 -l8
-Invoked command in '/home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers' returned '0': SHLVL=3 _=/usr/bin/env /usr/bin/cmake --build /home/root/voxl-mpa-to-ros2/colcon_ws/build/camera_calibration_parsers --target install -- -j8 -l8
